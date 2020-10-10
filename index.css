@@ -1,0 +1,168 @@
+/* Put your style information here! */
+
+body {
+  width: 100%;
+	background-color: #370617;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #ffba08;
+  font-weight: lighter;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+}
+
+h0 {
+  font-size: 70px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ffba08;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #9d0208;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #e85d04;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+
+}
+
+h3 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #f48c06;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+}
+
+ul {
+  padding-left: 50px;
+  list-style-position: inside;
+  text-align: left;
+  list-style-type: square;
+}
+ol {
+  padding-left: 50px;
+  list-style-position: inside;
+  text-align: left;
+}
+
+#container {
+
+}
+
+#title{
+  color: #370617;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#navbarDropdown{
+  color: #370617;
+  font-size: 20px;
+}
+
+#jumbotron{
+  background: url("./assets/background.jpg") center fixed;
+  background-size: cover;
+}
+
+.small-container{
+  background: url("./assets/background.jpg") center fixed;
+  background-size: cover;
+  height: 50px;
+}
+
+#col{
+  min-width: 500px;
+}
+
+#button{
+  background-color: #f48c06;
+  border: none;
+  box-shadow: 0 8px #9d0208;
+}
+
+#button:hover{
+  background-color: #e85d04;
+}
+
+#button:active{
+  transform: translateY(6px);
+  background-color: #e85d04;
+  box-shadow: 0 4px #6a040f;
+}
+
+#image-link:hover{
+  opacity: 70%;
+}
+
+
+#image-link:active{
+  opacity: 70%;
+  background-color: #9d0208;
+}
+
+#navbarDropdown:hover{
+  color: #9d0208;
+}
+
+#dropdown-item:hover{
+  color: white;
+  background-color: #9d0208;
+}
+
+.small_image{
+  max-width: 20vmin;
+  max-height: auto;
+}
+
+img {
+	min-width: 0;
+	min-height: 0;
+	padding: 10px;
+  width: 100%;
+	height:auto;
+}/* Put your style information here! */
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;
+
+  }
+  .sidenav a {font-size: 18px;}
+}
