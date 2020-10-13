@@ -3,7 +3,7 @@
 body {
   width: 100%;
 	background-color: #370617;
-  font-family: "Lato", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
   word-spacing: 2px;
@@ -33,8 +33,8 @@ h1 {
   font-size: 60px;
   letter-spacing: 2px;
   word-spacing: 2px;
-  color: #9d0208;
-  font-weight: bold;
+  color: #ffba08;
+  font-weight: normal;
   text-decoration: none;
   font-style: normal;
   font-variant: normal;
@@ -66,11 +66,104 @@ h3 {
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  text-align: center;
+  text-align: left;
+}
+
+h4 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ffba08;
+  font-weight: lighter;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: left;
+}
+
+li {
+  font-size: 12px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ffba08;
+  font-weight: lighter;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: left;
+  indent:0;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffba08;
+  opacity: 1; /* Firefox */
+}
+
+input[type=text] {
+  // input elements with type="text" attribute
+  color: #ffba08;
+}
+
+input, select, textarea{
+    color: white;
+}
+
+textarea:focus, input:focus {
+    color: white;
+}
+
+#submit {
+  float:right;
+  color: #6a040f;
+  background-color: #ffba08;
+  border: none;
+  box-shadow: 0 8px #9d0208;
+  color: #9d0208;
+}
+
+#submit:hover {
+  background-color: #f48c06;
+}
+
+#submit:active{
+  transform: translateY(6px);
+  background-color: #dc2f02;
+  box-shadow: 0 4px #6a040f;
+}
+
+.form-control {
+    background-color:#9d0208;
+    border: none;
+    color: #6a040f;
+}
+.form-control:hover {
+  background-color:  #dc2f02;
+}
+
+.form-control:active {
+  background-color:  #e85d04;
+  border: 0;
+}
+.form-control:focus{
+  background-color:  #e85d04;
+  border: none;
 }
 
 ul {
-  padding-left: 50px;
+  padding-left: 10px;
   list-style-position: inside;
   text-align: left;
   list-style-type: square;
@@ -81,8 +174,46 @@ ol {
   text-align: left;
 }
 
-#container {
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffba08;
+}
+
+.navbar .nav {
+    margin: 0;
+    width: 100%;
+}
+
+
+.dropdown-menu{
+  background-color: #ffba08;
+}
+
+.divider-vertical {
+    color: #9d0208;
+    height: 50px;                   /* any height */
+    border-left: 1px solid #9d0208;     /* right or left is the same */
+    float: left;                     /* so BS grid doesn't break */
+    opacity: 1;                    /* optional */
+                 /* optional */
+}
+
+#dropdown-item:hover{
+  color: #ffba08;
+  background-color: #9d0208;
+}
+
+
+#big-container {
+  background-color: #9d0208;
 }
 
 #title{
@@ -92,7 +223,7 @@ ol {
 }
 
 #navbarDropdown{
-  color: #370617;
+  color: #6a040f;
   font-size: 20px;
 }
 
@@ -102,9 +233,42 @@ ol {
 }
 
 .small-container{
-  background: url("./assets/background.jpg") center fixed;
-  background-size: cover;
-  height: 50px;
+  background-color: #6a040f;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.small-top-container{
+  background-color: #6a040f;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tiny-container{
+  background-color: #03071e;
+  height: 20px;
+}
+
+.creditcard_image {
+  width: 10%;
+}
+
+.trunc-text {
+  text-overflow: ellipsis;
+
+
+}
+#Footer {
+  background-color: #03071e;
+  font-size: 12px;
 }
 
 #col{
@@ -112,25 +276,38 @@ ol {
 }
 
 #button{
-  background-color: #f48c06;
+  background-color: #ffba08;
   border: none;
   box-shadow: 0 8px #9d0208;
+  color: #9d0208;
+}
+#submit{
+  background-color: #ffba08;
+  border: none;
+  box-shadow: 0 8px #9d0208;
+  color: #9d0208;
+}
+
+#btn{
+  background-color: #ffba08;
+  border: none;
+  box-shadow: 0 8px #9d0208;
+  color: #9d0208;
 }
 
 #button:hover{
-  background-color: #e85d04;
+  background-color: #f48c06;
 }
 
 #button:active{
   transform: translateY(6px);
-  background-color: #e85d04;
+  background-color: #dc2f02;
   box-shadow: 0 4px #6a040f;
 }
 
 #image-link:hover{
   opacity: 70%;
 }
-
 
 #image-link:active{
   opacity: 70%;
@@ -141,15 +318,31 @@ ol {
   color: #9d0208;
 }
 
-#dropdown-item:hover{
-  color: white;
-  background-color: #9d0208;
+.carousel {
+  height: 20%;
+  width: 100%;
+}
+
+.img-fluid {
+  height: 20%;
+  width: 100%;
+}
+
+
+.carousel-item img {
+  height: 20%;
+}
+
+.small_logo{
+  max-width: 8vmin;
+  max-height: auto;
 }
 
 .small_image{
-  max-width: 20vmin;
+  max-width: 30vmin;
   max-height: auto;
 }
+
 
 img {
 	min-width: 0;
@@ -165,4 +358,148 @@ img {
 
   }
   .sidenav a {font-size: 18px;}
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffba08' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffba08' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 15px;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: center;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+.slick-prev::before {
+    left: 10% !important;
+    color: #370617  !important; /*to notice it, is white*/
+    height: 100px !important;
+    z-index: 1 !important;
+    font-size: 40px !important;
+}
+.slick-next::before {
+    left: 25vw !important;
+    color: #370617  !important; /*to notice it, is white*/
+    height: 100px !important;
+    z-index: 1 !important;
+    font-size: 40px !important;
 }
